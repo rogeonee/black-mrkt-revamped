@@ -12,6 +12,7 @@
     font-size: 24px;
     text-decoration: none;
     color: black;
+    margin-right: auto; /* pushes subsequent items to the right */
 }
 
 .navLinks {
@@ -31,8 +32,14 @@
     background-color: rgba(0, 123, 255, 0.1);
 }
 
+.navLinks a.logout:hover {
+    background-color: rgba(255, 80, 80, 0.1);
+    color: #ff5050;
+}
+
 .username {
-    margin-right: 20px;
+    margin-right: 10px;
     font-weight: bold;
+    color: #007bff;
 }
   
