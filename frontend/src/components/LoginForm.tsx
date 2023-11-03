@@ -19,6 +19,14 @@ const LoginForm = () => {
     }
   };
 
+  const handleRegister = () => {
+    console.log('Register clicked');
+  };
+
+  const handlePassRecovery = () => {
+    console.log('Password recovery clicked');
+  };
+
   return (
     <form onSubmit={handleLogin} className={styles.loginForm}>
       {error && <div className={styles.errorMessage}>{error}</div>}
@@ -35,6 +43,14 @@ const LoginForm = () => {
         onChange={(e) => setPassword(e.target.value)}
       />
       <button type="submit" className={styles.loginButton}>Login</button>
+      <div className={styles.buttonGroup}>
+        <button type="button" onClick={handlePassRecovery} className={styles.secondaryButton}>
+          Forgot Password?
+        </button>
+        <button type="button" onClick={handleRegister} className={styles.secondaryButton}>
+          Register
+        </button>
+      </div>
     </form>
   );
 };

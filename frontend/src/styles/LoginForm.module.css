@@ -25,4 +25,21 @@
 .loginButton:hover {
     background-color: #3f51b5;
 }
+
+.buttonGroup {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
   
+  .secondaryButton {
+    background-color: #f3f4f6;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  
+    &:hover {
+      background-color: #e5e7eb;
+    }
+}
