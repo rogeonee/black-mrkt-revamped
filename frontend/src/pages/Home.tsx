@@ -1,4 +1,3 @@
-// pages/Home.tsx
 import React from 'react';
 
 function HomePage() {

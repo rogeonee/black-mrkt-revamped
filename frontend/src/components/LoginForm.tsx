@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import styles from '../styles/LoginForm.module.css'; // Adjust path as needed
+import styles from '../styles/LoginForm.module.css';
 import InputField from './InputField';
 
 const LoginForm = () => {
