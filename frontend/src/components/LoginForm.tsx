@@ -21,6 +21,7 @@ const LoginForm = () => {
 
   const handleRegister = () => {
     console.log('Register clicked');
+    navigate('/register');
   };
 
   const handlePassRecovery = () => {

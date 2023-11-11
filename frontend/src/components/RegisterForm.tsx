@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from '../styles/RegisterForm.module.css';
 import InputField from './InputField';
 import { Link } from 'react-router-dom';
-
+import { useNavigate } from 'react-router-dom';
 
 const RegisterForm = () => {
   const [username, setUsername] = useState('');
@@ -10,6 +10,7 @@ const RegisterForm = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleRegister = (event: React.FormEvent) => {
     event.preventDefault();
@@ -20,6 +21,7 @@ const RegisterForm = () => {
     // Further registration logic here...
     setError('');
     console.log('Registered successfully');
+    navigate('/home');
   };
 
   return (
