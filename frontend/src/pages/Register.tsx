@@ -1,16 +1,16 @@
 import React from 'react';
-import LoginForm from '../components/LoginForm';
+import RegisterForm from '../components/RegisterForm';
 import styles from '../styles/FormContainer.module.css';
 
-const LoginPage = () => {
+const RegisterPage = () => {
   return (
     <div className={styles.formContainer}>
       <div className={styles.formBox}>
-        <div className={styles.formTitle}>Login</div>
-        <LoginForm />
+        <div className={styles.formTitle}>Register</div>
+        <RegisterForm />
       </div>
     </div>
   );
 };
 
-export default LoginPage;
+export default RegisterPage;
