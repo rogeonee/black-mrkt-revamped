@@ -6,12 +6,21 @@
   border-radius: 8px;
   text-align: center;
   background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column; /* Organize children in a column */
+  align-items: center; /* Center-align children horizontally */
+  overflow: hidden;
 }
 
 .productImage {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+  width: 100%; /* Full width of the container */
+  height: 400px; /* Fixed height */
+  object-fit: contain; /* Scale down to fit, no cropping */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 20px; /* Add some space between the image and the title */
+  background-color: #f8f8f8; /* Background color if the image is smaller than the container */
+  overflow: hidden; /* Ensures the border-radius is visible */
+  display: block; /* Ensures the image is a block-level element, which can affect border-radius */
 }
 
 .productTitle {
@@ -35,6 +44,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  width: 200px; /* Set a fixed width for the button */
 }
 
 .addToCartButton:hover {
