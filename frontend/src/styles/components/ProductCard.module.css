@@ -4,19 +4,22 @@
     padding: 16px;
     text-align: center;
     background-color: #fff;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
 }
 
 .image {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Cover the space without stretching the image */
     border-radius: 4px;
-}
+  }
 
 .name {
     margin: 8px 0;
     font-size: 1rem;
     color: #333;
+    flex-grow: 1; /* Ensure the name takes up the available space pushing the button down */
 }
 
 .addToCartButton {
@@ -26,11 +29,15 @@
     padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
-    width: 100%;
-    margin-top: 8px;
+    margin-top: auto; /* Push the button to the bottom */
 }
 
 .addToCartButton:hover {
     background-color: #0056b3;
+}
+
+.cardLink {
+    text-decoration: none;
+    color: inherit; /* Ensure that the color and text-decoration of links are consistent */
 }
   
